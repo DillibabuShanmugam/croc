@@ -1,0 +1,17 @@
+*drcRulesFile: /home/uguler/TSMC180nm/CalibreDMY/Dummy_Metal_Calibre_0.18um.214a
+*drcRunDir: /home/uguler/TSMC180nm/CalibreDMY_Fill
+*drcLayoutPaths: padframe_4th.calibre.db
+*drcLayoutPrimary: padframe_4th
+*drcLayoutLibrary: icastapeout2
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: DM.gds
+*drcResultsFormat: GDSII
+*drcResultsCellSuffix: _DM
+*drcSummaryFile: padframe_4th.drc.summary
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: icastapeout2
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: padframe_4th.def

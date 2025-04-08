@@ -1,0 +1,109 @@
+# ignore everything, except what is marked with an exclamation mark (!)
+*
+!.gitignore
+
+# Documentation
+!README.md
+!docs/
+!docs/overall_design_flow.svg
+!docs/overall_design_flow.pdf
+!docs/overall_design_flow.png
+!docs/padframe.svg
+!docs/padframe.pdf
+!docs/padframe.png
+
+# RTL (desing files)
+!rtl/
+!rtl/mavg.v
+
+# RTL Simulation (functional verification)
+!sim/
+!sim/Makefile
+!sim/tb.v
+
+# RTL Synthesis
+!syn/
+!syn/Makefile
+!syn/run_genus.tcl
+
+# RTL Static timing analysis (sta)
+!sta/
+!sta/run_tempus.tcl
+!sta/Makefile
+
+# RTL power analysis
+!power/
+!power/run_joules.tcl
+!power/Makefile
+
+# Chip planning (pads, I/O pins placement, top-level RTL)
+!chip/
+!chip/no_padframe/
+!chip/no_padframe/chip.io
+!chip/padframe/
+!chip/padframe/chip.io
+!chip/padframe/chip.v
+!chip/padframe/pads.v
+
+# Design constraints
+!constraints/
+!constraints/constraints_clk.sdc
+
+# Place and route (PnR), i.e. layout
+!layout/
+!layout/viewDefinition.tcl
+!layout/Makefile
+!layout/run_genus.tcl
+!layout/tsmc180.layermap
+!layout/run_innovus.tcl
+
+# Calibre dummy metal and dummy OD/PO insertion
+!calibre
+!calibre/README.md
+!calibre/lvs
+!calibre/lvs/main.lvs
+!calibre/no_padframe
+!calibre/no_padframe/drc
+!calibre/no_padframe/drc/rule_files
+!calibre/no_padframe/dummy_generation
+!calibre/no_padframe/dummy_generation/rule_files
+!calibre/no_padframe/drc/rule_files/ant.drc
+!calibre/no_padframe/drc/rule_files/main.drc
+!calibre/no_padframe/drc/rule_files/wb.drc
+!calibre/no_padframe/dummy_generation/rule_files/DOD_Fill_rule
+!calibre/no_padframe/dummy_generation/rule_files/Dummy_Metal_Calibre_0.18um.214a
+!calibre/no_padframe/dummy_generation/rule_files/Dummy_OD_PO_Calibre_0.18um.210a
+
+!calibre/padframe
+!calibre/padframe/drc
+!calibre/padframe/drc/rule_files
+!calibre/padframe/dummy_generation
+!calibre/padframe/dummy_generation/rule_files
+
+!calibre/padframe/drc/rule_files/ant.drc
+!calibre/padframe/drc/rule_files/main.drc
+!calibre/padframe/drc/rule_files/wb.drc
+!calibre/padframe/dummy_generation/rule_files/DOD_Fill_rule
+!calibre/padframe/dummy_generation/rule_files/Dummy_Metal_Calibre_0.18um.214a
+!calibre/padframe/dummy_generation/rule_files/Dummy_OD_PO_Calibre_0.18um.210a
+
+# Netlist's and sealring's GDS-s merge
+!sealring/
+!sealring/README.md
+!sealring/merge_gds.py
+
+# Gate-level simulation
+!glsim/
+!glsim/Makefile
+!glsim/tb.v
+!glsim/tb.sv
+
+# Gate-level STA
+!glsta/
+!glsta/run_tempus.tcl
+!glsta/Makefile
+
+# Gate-level power
+!glpower/
+!glpower/run_joules.tcl
+!glpower/Makefile
